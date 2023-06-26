@@ -6,3 +6,6 @@ O programac cria uma tabela com a biblioteca pandas do consumo electrico dos var
 
 O ficheiro Ficha Trabalho 4.py contém o codigo do execercio. 
 Apresenta por definição o calculo da variação do consumo de electricidade em Portugal entre 1990 e 2000. 
+
+O ficheiro WorldBank.xlsx é o ficheiro que contem a base de dados e deverá estar na mesma pasta do ficheiro
+com o codigo.
