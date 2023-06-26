@@ -29,8 +29,7 @@ print("")
 
 
 while True:
-    print("")
-    print("Menu Opções:")
+    print("\nMenu Opções:\n")
     print("1. Ver tabela todos os paises")
     print("2. **Ver dados Portugal")
     print("3. **Ver dados Brasil")
@@ -43,51 +42,39 @@ while True:
     opcao=input("Escolha opção: ")
     
     if opcao=='1':
-        print("")
-        print(data)
-        print("")
+        print("\n",data,"\n")
     if opcao=='2':
-        print("")
-        print(data_portugal)
-        print("")
+        print("\n",data_portugal,"\n")
         #print(data_portugal['1990 [YR1990]'].values[0])
     if opcao=='3':
-        print("")
-        print(data_brasil)
-        print("")
+        print("\n",data_brasil,"\n")
         #print(data_portugal['1990 [YR1990]'].values[0])
     if opcao=='4':
-        print("")
+        #print("")
         variacao_percentual= calcular_variacao_percentual(data_portugal['1990 [YR1990]'].values[0], data_portugal['2000 [YR2000]'].values[0])
-        print(f'Variação percentual no consumo de energia elétrica em Portugal entre 1990 e 2000: {variacao_percentual:.2f}%')
-        print("")
+        print(f'\nVariação percentual no consumo de energia elétrica em Portugal entre 1990 e 2000: {variacao_percentual:.2f}%\n')
+        #print("")
     if opcao=='5':
-        print("")
+        #print("")
         variacao_percentual= calcular_variacao_percentual(data_brasil['1990 [YR1990]'].values[0], data_brasil['2000 [YR2000]'].values[0])
-        print(f'Variação percentual no consumo de energia elétrica em Brasil entre 1990 e 2000: {variacao_percentual:.2f}%')
-        print("")
+        print(f'\nVariação percentual no consumo de energia elétrica em Brasil entre 1990 e 2000: {variacao_percentual:.2f}%\n')
+        #print("")
     if opcao=='6':
-        pais=input("Qual o País: ")
+        pais=input("\nQual o País: ")
         try:
             data_pais = data[data['Country Name'] == pais]
-            print("")
-            print(data_pais['1990 [YR1990]'].values[0])
-            print("")
+            #print("")
+            print("\n",data_pais,"\n")
+            #print("")
         except:
-            print("")
-            print("invalido")
-            print("")
+            print("\nInvalido. País nao encontrado.\n")
     if opcao=='7':
-        pais=input("Qual o País: ")
+        pais=input("\nQual o País: ")
         try:
             data_pais = data[data['Country Name'] == pais]
             variacao_percentual= calcular_variacao_percentual(data_pais['1990 [YR1990]'].values[0], data_pais['2000 [YR2000]'].values[0])
-            print("")
-            print(f'Variação percentual no consumo de energia elétrica em {pais} entre 1990 e 2000: {variacao_percentual:.2f}%')
-            print("")
+            print(f'\nVariação percentual no consumo de energia elétrica em {pais} entre 1990 e 2000: {variacao_percentual:.2f}%\n')
         except:
-            print("")
-            print("invalido")
-            print("")
+            print("\nInvalido. País nao encontrado.\n")
     if opcao=='8':
         break
