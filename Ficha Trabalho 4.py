@@ -22,12 +22,11 @@ def calcular_variacao_percentual(consumo_inicial, consumo_final):
     return (consumo_final - consumo_inicial) / consumo_inicial * 100
 
 variacao_percentual= calcular_variacao_percentual(data_portugal['1990 [YR1990]'].values[0], data_portugal['2000 [YR2000]'].values[0])
-#print(variacao_percentual)
+
 
 print(f'Variação percentual no consumo de energia elétrica em Portugal entre 1990 e 2000: {variacao_percentual:.2f}%')
 print("")
 
-Sair=False
 
 while True:
     print("")
