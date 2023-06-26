@@ -5,7 +5,7 @@ print("************* Consumo Energia electrica Mundial 1990-2000 *************")
 print("")
 
 # Carregar dados do Excel
-data = pd.read_excel('C:\\Users\\uliss\\OneDrive\Ambiente de Trabalho\\1.xlsx', sheet_name='Data')
+data = pd.read_excel('WorldBank.xlsx', sheet_name='Data')
 #print(data)
 
 # Selecionar as colunas de interesse (País, Ano e Consumo de Energia)
